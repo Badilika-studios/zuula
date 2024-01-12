@@ -1,0 +1,207 @@
+body {
+    background-color: rgb(227, 243, 9);
+}
+
+.bar {
+    text-align: center;
+}
+
+.bar h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+/*.deal {
+    position: absolute;
+    color: white;
+    background-color: black;
+    line-height: 1.1;
+    font-size: 36px;
+    text-align: justify;
+    width: auto;
+    font-weight: bolder;
+}*/
+
+
+/*.row .card .deal {
+    position: relative;
+    text-align: center;
+    color: white;
+}*/
+
+.deal {
+    position: relative;
+}
+
+.deal::after {
+    content: "Amazing destinations await your company";
+    position: absolute;
+    /*top: 100px;*/
+    white-space: pre;
+    right: 40%;
+    /*transform: translateX(50%);*/
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.img-responsive1 {
+    /*width: auto;
+    height: 645px;*/
+    position: absolute;
+    background-color: orange;
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+    height: 600px;
+}
+
+
+/*.card-img{
+    width: 195px;
+    height: 195px;
+    border: 8px solid rgb(151, 10, 10);
+    border-radius: 10px;
+}*/
+
+.card-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkred;
+    text-align: center;
+}
+
+.future img {
+    position: absolute;
+    border: 8px solid rgb(151, 10, 10);
+    border-radius: 30px;
+    width: 195px;
+    height: 195px;
+}
+
+aside {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: right;
+    width: 30%;
+    color: white;
+    text-decoration: double;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo {
+    border-top: 4px solid #648880;
+    padding: 10px 0 22px 0;
+    float: left;
+    text-decoration: none;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*.container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.content {
+    width: 360px;
+    height: 40px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription .add-email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+}
+
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 100px;
+    border: none;
+    border-radius: 60px;
+    outline: none;
+    margin: 1px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #4ABEBB;
+    color: #FFFFFF;
+    transition: width .35s ease-in-out, background .35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+    width: calc(100% - 2px);
+    background: #C0E02E;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+    transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+}
+
+.primary-footer {
+    clear: both;
+    margin-bottom: 0;
+    text-align: center;
+    color: red;
+}
